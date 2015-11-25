@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Volkmann Diner!</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body data-ng-app='menuMdl'>
+
+    <div class="container">
+        <ui-view></ui-view>
+        <div ui-view="nav"></div>
+    </div>
+
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.min.js"></script>
+<script src="https://cdn.jsdelivr.net/angular.ui-router/0.2.8/angular-ui-router.min.js"></script>
+<script src="/app/modules/app.js"></script>
+<script src="/app/global/globalSettings.js"></script>
+
+</html>

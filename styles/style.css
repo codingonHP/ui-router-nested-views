@@ -7,9 +7,14 @@ body {
     background-color: black;
 }
 
+.push {
+    margin-top: 15% !important;
+}
+
 .container,
 .header,
-.navigator {
+.navigator,
+.content {
     margin: auto;
     width: 80%;
 }
@@ -33,6 +38,10 @@ body {
 
 .navigator {
     margin-top: 50px;
+}
+
+.clearfix {
+    float: none;
 }
 
 .navigator ul li {
@@ -180,4 +189,53 @@ body {
     100% {
         text-shadow: 1px 1px 1px #000;
     }
+}
+
+
+/*
+
+Breakfast CSS
+
+*/
+
+.menu,
+.menu-items {
+    font-family: fantasy;
+    font-size: -webkit-xxx-large;
+    font-style: oblique;
+    -webkit-font-kerning: initial;
+    -moz-font-kerning: initial;
+    font-kerning: initial;
+    text-shadow: 1px 1px 1px #dd0202;
+    margin-top: 10px;
+    color: whitesmoke;
+}
+
+.menu-items {
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items:hover {
+    border-bottom: 2px solid gray;
+    cursor: pointer;
+    font-size: 72px;
+    -webkit-transform: rotate3d(0, 0, 1, 358deg);
+    transform: rotate3d(0, 0, 1, 358deg);
+    color: white;
+    text-shadow: 3px 5px 40px #FEEE00;
+    -webkit-animation-name: blink;
+    animation-name: blink;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
 }
